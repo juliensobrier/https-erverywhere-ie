@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\bho">
+      <UniqueIdentifier>{e8049b41-9369-4b6b-8b9c-053d4a889aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rules">
+      <UniqueIdentifier>{865591f0-633a-4802-9f76-bf1f642eb2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rules">
+      <UniqueIdentifier>{53de3526-3334-4b20-a005-3d823e54073b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BHO">
+      <UniqueIdentifier>{b9a5fc3d-a497-4eb2-8a8c-13fa3962d327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wininet">
+      <UniqueIdentifier>{0a4fb525-f2de-433a-9629-505d8d4c1e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wininet">
+      <UniqueIdentifier>{75535189-e5a1-427c-b31a-1da3cfa692c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{e84ac5d2-78a8-4126-a685-804536ecf3db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{715f7843-5ef6-455e-8d25-a697a73c35b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Page">
+      <UniqueIdentifier>{d07d19a3-894a-4d3c-a7cf-b592e4169494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Page">
+      <UniqueIdentifier>{068471b7-b9e2-4b7a-82c1-4a26501170bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd Party">
+      <UniqueIdentifier>{e252ae46-6cac-469f-94d6-ddd7809a4116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd Party\TinyXml">
+      <UniqueIdentifier>{670a36fe-f5ab-47df-9941-759750234f38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dll.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EventSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftwareUpdate.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTP.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules.cpp">
+      <Filter>Source Files\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Ruleset.cpp">
+      <Filter>Source Files\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Target.cpp">
+      <Filter>Source Files\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Rule.cpp">
+      <Filter>Source Files\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Securecookies.cpp">
+      <Filter>Source Files\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Homepage.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectWithSite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="Preferences.cpp">
+      <Filter>Source Files\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="Exclusion.cpp">
+      <Filter>Source Files\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="MTServer.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="DOMLoaded.cpp">
+      <Filter>Source Files\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="Modify.cpp">
+      <Filter>Source Files\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="WinInetHook.cpp">
+      <Filter>Source Files\Wininet</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>3rd Party\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>3rd Party\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>3rd Party\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>3rd Party\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\xmltest.cpp">
+      <Filter>3rd Party\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="ncodehook\NCodeHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ncodehook\NCodeHookItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bho.res">
+      <Filter>Resource Files</Filter>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectWithSite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unknown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Target.h">
+      <Filter>Header Files\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules.h">
+      <Filter>Header Files\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Ruleset.h">
+      <Filter>Header Files\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Rule.h">
+      <Filter>Header Files\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Securecookies.h">
+      <Filter>Header Files\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftwareUpdate.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="Homepage.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="Preferences.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>Header Files\BHO</Filter>
+    </ClInclude>
+    <ClInclude Include="Exclusion.h">
+      <Filter>Header Files\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPS EveryWhere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MTServer.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="DOMLoaded.h">
+      <Filter>Header Files\Page</Filter>
+    </ClInclude>
+    <ClInclude Include="Modify.h">
+      <Filter>Header Files\Page</Filter>
+    </ClInclude>
+    <ClInclude Include="WinInetHook.h">
+      <Filter>Header Files\Wininet</Filter>
+    </ClInclude>
+    <ClInclude Include="ncodehook\NCodeHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ncodehook\NCodeHookInstantiation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

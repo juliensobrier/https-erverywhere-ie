@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HTTPS EveryWhere", "HTTPS EveryWhere\HTTPS EveryWhere.vcxproj", "{6AC238D9-E81A-4196-88BD-3071B54E7194}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{75CC3CCE-1FE1-4D45-8013-6A5CEE167442}"
+	ProjectSection(SolutionItems) = preProject
+		HTTPS EveryWhere.vsmdi = HTTPS EveryWhere.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyTest", "MyTest\MyTest.vcxproj", "{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AC238D9-E81A-4196-88BD-3071B54E7194} = {6AC238D9-E81A-4196-88BD-3071B54E7194}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "distorm", "distorm\distorm.vcxproj", "{45776455-C7D3-4BEC-8739-6BC212581ECB}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = HTTPS EveryWhere.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release_x64|Win32 = Release_x64|Win32
+		Release_x64|x64 = Release_x64|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Debug|Win32.ActiveCfg = Release|Win32
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Debug|Win32.Build.0 = Release|Win32
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Debug|x64.ActiveCfg = Debug|x64
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Debug|x64.Build.0 = Debug|x64
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release_x64|Win32.ActiveCfg = Release_x64|Win32
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release_x64|Win32.Build.0 = Release_x64|Win32
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release_x64|x64.ActiveCfg = Release_x64|x64
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release_x64|x64.Build.0 = Release_x64|x64
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release|Win32.ActiveCfg = Release|Win32
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release|Win32.Build.0 = Release|Win32
+		{6AC238D9-E81A-4196-88BD-3071B54E7194}.Release|x64.ActiveCfg = Release|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Debug|Win32.Build.0 = Debug|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Debug|x64.ActiveCfg = Debug|x64
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Debug|x64.Build.0 = Debug|x64
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release_x64|Win32.ActiveCfg = Release_x64|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release_x64|Win32.Build.0 = Release_x64|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release_x64|x64.ActiveCfg = Release_x64|x64
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release_x64|x64.Build.0 = Release_x64|x64
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release|Win32.ActiveCfg = Release|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release|Win32.Build.0 = Release|Win32
+		{6B7D9788-5ED6-4612-B42A-3F7B548F6A42}.Release|x64.ActiveCfg = Release|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Debug|Win32.ActiveCfg = Release|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Debug|Win32.Build.0 = Release|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Debug|x64.ActiveCfg = Debug|x64
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Debug|x64.Build.0 = Debug|x64
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release_x64|Win32.ActiveCfg = Release_x64|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release_x64|Win32.Build.0 = Release_x64|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release_x64|x64.ActiveCfg = Release_x64|x64
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release_x64|x64.Build.0 = Release_x64|x64
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release|Win32.ActiveCfg = Release|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release|Win32.Build.0 = Release|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release|x64.ActiveCfg = Release|Win32
+		{45776455-C7D3-4BEC-8739-6BC212581ECB}.Release|x64.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

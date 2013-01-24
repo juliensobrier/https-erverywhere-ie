@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Import">
+      <UniqueIdentifier>{35a816fb-4754-4a62-ba4e-f6fdadc54b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Import\Rules">
+      <UniqueIdentifier>{219bcd6d-bdba-4c0d-b919-49f2f52c62dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Import\bho">
+      <UniqueIdentifier>{777421d7-3a87-45f7-b120-747491ad9a86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Import\TinyXml">
+      <UniqueIdentifier>{4a080db6-12c1-4340-95d7-0e144522ee86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\HTTPS EveryWhere\Rules.cpp">
+      <Filter>Source Files\Import\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Ruleset.cpp">
+      <Filter>Source Files\Import\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Target.cpp">
+      <Filter>Source Files\Import\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Rule.cpp">
+      <Filter>Source Files\Import\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Securecookies.cpp">
+      <Filter>Source Files\Import\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\SoftwareUpdate.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\HTTP.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSecureCookies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Preferences.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\debug.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Convert.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\FileSystem.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Resources.cpp">
+      <Filter>Source Files\Import\bho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS EveryWhere\Exclusion.cpp">
+      <Filter>Source Files\Import\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="TestExclusion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS Everywhere\tinyxml\tinystr.cpp">
+      <Filter>Source Files\Import\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS Everywhere\tinyxml\tinyxml.cpp">
+      <Filter>Source Files\Import\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS Everywhere\tinyxml\tinyxmlerror.cpp">
+      <Filter>Source Files\Import\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS Everywhere\tinyxml\tinyxmlparser.cpp">
+      <Filter>Source Files\Import\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HTTPS Everywhere\tinyxml\xmltest.cpp">
+      <Filter>Source Files\Import\TinyXml</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
