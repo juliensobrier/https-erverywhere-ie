@@ -11,3 +11,14 @@
 *.lai
 *.la
 *.a
+
+# Visual Studio
+*.sdf
+Debug/
+Release/
+x64/
+ipch/
+
+
+# Custom
+backup/
