@@ -68,12 +68,15 @@ void CEventSink::Init(IWebBrowser2* pSite) {
 	this->pSite = pSite;
 
 	if (rules.IsEmpty())
+	{
 		rules.Add("default.rulesets");
+		rules.Add("custom.rulesets");
+	}
 
 	LoadLibrary(BHO_FILENAME_DLL);
 
 
-	rules.Add("default.rulesets"); // Check if necessary
+	//rules.Add("default.rulesets"); // Check if necessary
 
 	WinInetInstallHooks(rules);
 	pDomEvent = NULL;

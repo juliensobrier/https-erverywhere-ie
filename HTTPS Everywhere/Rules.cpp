@@ -35,6 +35,19 @@ HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 {
 	Debug::Log("Rules file: %s", rulesPath);
 
+	// Check if file exists
+	DWORD dwAttrib = GetFileAttributes(rulesPath);
+	if (dwAttrib == INVALID_FILE_ATTRIBUTES)
+	{
+		Debug::Warn("File %s does not exist", rulesPath);
+		return E_FAIL;
+	}
+	else if (dwAttrib & FILE_ATTRIBUTE_DIRECTORY) {
+		Debug::Warn("%s is a directory, not a file", rulesPath);
+		return E_FAIL;
+	}
+
+
 	TiXmlDocument doc(rulesPath);
 	bool loaded = doc.LoadFile();
 	if (loaded) {
