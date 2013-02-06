@@ -46,8 +46,8 @@
     <Filter Include="3rd Party">
       <UniqueIdentifier>{e252ae46-6cac-469f-94d6-ddd7809a4116}</UniqueIdentifier>
     </Filter>
-    <Filter Include="3rd Party\TinyXml">
-      <UniqueIdentifier>{670a36fe-f5ab-47df-9941-759750234f38}</UniqueIdentifier>
+    <Filter Include="3rd Party\TinyXml2">
+      <UniqueIdentifier>{d3d3e533-8118-4b69-9dad-e8f8087fe810}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -122,26 +122,14 @@
     <ClCompile Include="WinInetHook.cpp">
       <Filter>Source Files\Wininet</Filter>
     </ClCompile>
-    <ClCompile Include="tinyxml\tinystr.cpp">
-      <Filter>3rd Party\TinyXml</Filter>
-    </ClCompile>
-    <ClCompile Include="tinyxml\tinyxml.cpp">
-      <Filter>3rd Party\TinyXml</Filter>
-    </ClCompile>
-    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
-      <Filter>3rd Party\TinyXml</Filter>
-    </ClCompile>
-    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
-      <Filter>3rd Party\TinyXml</Filter>
-    </ClCompile>
-    <ClCompile Include="tinyxml\xmltest.cpp">
-      <Filter>3rd Party\TinyXml</Filter>
-    </ClCompile>
     <ClCompile Include="ncodehook\NCodeHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ncodehook\NCodeHookItem.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2\tinyxml2.cpp">
+      <Filter>3rd Party\TinyXml2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

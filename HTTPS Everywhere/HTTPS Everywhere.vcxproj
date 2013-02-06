@@ -186,7 +186,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BHOINCPP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -358,11 +358,7 @@
     <ClCompile Include="Securecookies.cpp" />
     <ClCompile Include="SoftwareUpdate.cpp" />
     <ClCompile Include="Target.cpp" />
-    <ClCompile Include="tinyxml\tinystr.cpp" />
-    <ClCompile Include="tinyxml\tinyxml.cpp" />
-    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
-    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
-    <ClCompile Include="tinyxml\xmltest.cpp" />
+    <ClCompile Include="tinyxml2\tinyxml2.cpp" />
     <ClCompile Include="WinInetHook.cpp" />
   </ItemGroup>
   <ItemGroup>

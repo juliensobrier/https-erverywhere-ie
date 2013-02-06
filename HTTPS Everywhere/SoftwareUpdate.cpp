@@ -5,7 +5,8 @@
 #include "HTTP.h"
 #include "debug.h"
 
-#include <tinyxml.h>
+#include <tinyxml2.h>
+using namespace tinyxml2;
 
 
 const char* bho::SoftwareUpdate::Check()
@@ -49,14 +50,13 @@ const char*  bho::SoftwareUpdate::Check(bool tab_visible, bool force)
 	bho::HTTP::DownloadLow(_T(BHO_UPDATE), _T("version.xml"));
 	char* path = bho::FileSystem::BHOLocalLowFile("version.xml");
 
-	TiXmlDocument doc(path);
 
-	bool loaded = doc.LoadFile();
-	if (loaded) {
+	tinyxml2::XMLDocument doc;
+	XMLError loaded = doc.LoadFile(path);
+	if (loaded == XML_SUCCESS) {
 		Debug::Log("XML loaded");
 
-		TiXmlHandle hDoc(&doc);
-		TiXmlElement* pElem = hDoc.FirstChild( "version" ).FirstChild( "current" ).ToElement();
+		XMLElement* pElem = doc.FirstChildElement( "version" )->FirstChildElement( "current" );
 		if (pElem) {
 			const char *pText=pElem->GetText();
 			Debug::Log("New version found: %s", pText);
@@ -86,7 +86,7 @@ const char*  bho::SoftwareUpdate::Check(bool tab_visible, bool force)
 			{
 				Debug::Log("Newer version available");
 
-				TiXmlElement* pUrlElem = hDoc.FirstChild( "version" ).FirstChild( "url" ).ToElement();
+				XMLElement* pUrlElem = doc.FirstChildElement( "version" )->FirstChildElement( "url" );
 				if (pUrlElem) 
 				{
 					const char *pUrlText = pUrlElem->GetText();

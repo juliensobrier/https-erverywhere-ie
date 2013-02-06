@@ -1,7 +1,7 @@
 #include "Rules.h"
 
-#include <tinyxml.h>
-
+#include <tinyxml2.h>
+using namespace tinyxml2;
 
 HRESULT HTTPS::Rules::Add(char* file)
 {
@@ -31,6 +31,8 @@ HRESULT HTTPS::Rules::Add(char* file)
 	return hr;
 }
 
+
+
 HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 {
 	Debug::Log("Rules file: %s", rulesPath);
@@ -48,15 +50,14 @@ HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 	}
 
 
-	TiXmlDocument doc(rulesPath);
-	bool loaded = doc.LoadFile();
-	if (loaded) {
+	tinyxml2::XMLDocument doc;
+	XMLError loaded = doc.LoadFile(rulesPath);
+	if (loaded == XML_SUCCESS) {
 		Debug::Log("Rules loaded");
 
-		TiXmlHandle hDoc(&doc);
-		TiXmlElement* child = hDoc.FirstChild("rulesetlibrary").FirstChild("ruleset").ToElement();
+		XMLElement* child = doc.FirstChildElement("rulesetlibrary")->FirstChildElement("ruleset");
 
-		for( child; child; child=child->NextSiblingElement("ruleset") )
+		for( child; child; child = child->NextSiblingElement("ruleset") )
 		{
 			const char* name = child->Attribute("name");
 			//Debug::Log("Rule name: %s", name);
@@ -73,7 +74,7 @@ HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 
 			HTTPS::Ruleset* ruleset = new Ruleset(name, default_off, platform);
 
-			TiXmlElement* target = child->FirstChildElement("target");
+			XMLElement* target = child->FirstChildElement("target");
 			for( target; target; target=target->NextSiblingElement("target") )
 			{
 				const char* host = target->Attribute("host");
@@ -81,7 +82,7 @@ HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 				ruleset->AddTarget(host);
 			}
 
-			TiXmlElement* rule = child->FirstChildElement("rule");
+			XMLElement* rule = child->FirstChildElement("rule");
 			for( rule; rule; rule=rule->NextSiblingElement("rule") )
 			{
 				const char* from = rule->Attribute("from");
@@ -91,7 +92,7 @@ HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 				ruleset->AddRule(from, to);
 			}
 
-			TiXmlElement* cookies = child->FirstChildElement("securecookie");
+			XMLElement* cookies = child->FirstChildElement("securecookie");
 			for( cookies; cookies; cookies=cookies->NextSiblingElement("securecookie") )
 			{
 				const char* host = cookies->Attribute("host");
@@ -101,7 +102,7 @@ HRESULT HTTPS::Rules::AddAbsolute(char* rulesPath)
 				ruleset->AddSecurecookies(host, nameCookie);
 			}
 
-			TiXmlElement* exclusion = child->FirstChildElement("exclusion");
+			XMLElement* exclusion = child->FirstChildElement("exclusion");
 			for( exclusion; exclusion; exclusion=exclusion->NextSiblingElement("exclusion") )
 			{
 				const char* pattern = exclusion->Attribute("pattern");
