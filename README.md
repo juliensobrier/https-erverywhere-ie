@@ -1,4 +1,6 @@
 https-erverywhere-ie
+
+[![Git](https://app.soluble.cloud/api/v1/public/badges/f268f503-2696-4d4a-8989-2189a711df07.svg?orgId=234270307752)](https://app.soluble.cloud/repos/details/github.com/juliensobrier/https-erverywhere-ie?orgId=234270307752)  
 ====================
 
 HTTPS Everywhere for Internet Explorer, a port of the EFF extension
